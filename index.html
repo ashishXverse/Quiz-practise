@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+  <div class="top-bar">
+    <span id="progressText">Question 1</span>
+    <label class="switch">
+      <input type="checkbox" id="themeToggle" />
+      <span class="slider"></span>
+    </label>
+  </div>
+
+ 
+  <div class="progress-bar">
+    <div id="progressFill"></div>
+  </div>
+
+
+  <div class="quiz-container" id="quiz">
+    <div id="timer">⏳ <span id="time">15</span>s</div>
+    <h2 id="question">Loading...</h2>
+
+    <ul>
+      <li><button class="option" id="a"></button></li>
+      <li><button class="option" id="b"></button></li>
+      <li><button class="option" id="c"></button></li>
+      <li><button class="option" id="d"></button></li>
+    </ul>
+
+    <button id="next" disabled>Next</button>
+  </div>
+
+  
+  <div class="score-container" id="scoreContainer" style="display:none;">
+    <h2>Your Score: <span id="finalScore"></span></h2>
+    <div id="reviewList"></div>
+    <button onclick="location.reload()">Restart</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
